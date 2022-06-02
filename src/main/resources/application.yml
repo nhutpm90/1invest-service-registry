@@ -4,7 +4,9 @@ server:
 ---
   
 spring:
-  profiles: dev
+  config:
+    activate:
+      on-profile: dev
   
 eureka: 
   instance:
@@ -16,7 +18,9 @@ eureka:
 ---
   
 spring:
-  profiles: test
+  config:
+    activate:
+      on-profile: test
 
 eureka: 
   instance:
@@ -28,7 +32,9 @@ eureka:
 ---
 
 spring:
-  profiles: prod
+  config:
+    activate:
+      on-profile: prod
 
 eureka: 
   instance:
